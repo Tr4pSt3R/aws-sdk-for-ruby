@@ -15,10 +15,10 @@ require 'yaml'
 
 module AWS
 
-  if Object.const_defined?(:Rails) and Rails.const_defined?(:Railtie)
+  if Object.const_defined?(:Rails) and Rails.const_defined?(:Railties)
 
     # @private
-    class Railtie < Rails::Railtie
+    class Railtie < Rails::Railties
 
       # configure our plugin on boot. other extension points such
       # as configuration, rake tasks, etc, are also available
